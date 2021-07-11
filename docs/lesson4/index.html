@@ -1,1 +1,243 @@
-1
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>プログル技術（準備編）</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="Lesson4"
+                  title="プログル技術（準備編）"
+                  environment="web"
+                  feedback-link="https://forms.gle/RgmzXnQRu5XqgL3x6">
+    
+      <google-codelab-step label="この章で学ぶこと" duration="3">
+        <h2 class="checklist" is-upgraded>What you&#39;ll learn</h2>
+<ul class="checklist">
+<li>プログルとは？</li>
+<li>プログル技術を使って指導するための準備</li>
+<li>先生アカウントの作成</li>
+<li>クラスの作成</li>
+<li>初期パスワードの配布</li>
+<li>転入/転出の対応</li>
+<li>パスワードを忘れたり紛失したら</li>
+<li>パスワードロックがかかってしまったら</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="みんなのコードが提供するプログルとは" duration="0">
+        <aside class="warning"><h2 is-upgraded>プログルとは</h2>
+<ul>
+<li>非営利活動法人みんなのコードが提供するプログラミング教材</li>
+</ul>
+</aside>
+<aside class="warning"><h2 is-upgraded>すべての学校で実践できる教材</h2>
+<ul>
+<li>ICT環境が充実していなくても指導できる</li>
+<li>プログラミング教育への予算の確保が難しくても指導できる</li>
+</ul>
+</aside>
+<aside class="warning"><h2 is-upgraded>すべての先生が実践できる教材</h2>
+<ul>
+<li>ICT機器の活用が苦手な先生でも指導できる</li>
+<li>プログラミングを教えることが初めての先生でも指導できる</li>
+</ul>
+</aside>
+<table>
+<tr><td colspan="2" rowspan="1"><p>みんなのコードが提供するプログルシリーズ</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>小学校</p>
+</td><td colspan="1" rowspan="1"><p><a href="https://proguru.jp/" target="_blank">プログル算数・プログル理科</a></p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>中学校</p>
+</td><td colspan="1" rowspan="1"><p><a href="https://middle.proguru.jp/" target="_blank">プログル技術</a></p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p>高校</p>
+</td><td colspan="1" rowspan="1"><p>プログル情報（4月リリース予定）</p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="プログルの特徴" duration="0">
+        <h2 is-upgraded>｢授業で使えるプログラミング教材｣</h2>
+<aside class="warning"><p>●ドリル型になっていて取り組みやすい</p>
+</aside>
+<aside class="warning"><p>●無償で提供しています</p>
+<p>PCやタブレット端末のブラウザから開始できる</p>
+<p>対応ブラウザChrome,Safari,Edge</p>
+</aside>
+<aside class="warning"><p>●教科の枠組みの中で授業を実施できる</p>
+<p>指導案やワークシートも無償配布</p>
+</aside>
+<aside class="warning"><p>●学校のICT環境を考慮したプロダクト設計</p>
+<p>アプリケーションのインストール不要</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="プログル技術とは" duration="5">
+        <p>新学習指導要領の<strong>D(2)ネットワークを利用した双方向性のあるコンテンツのプログラミングによる問題解決</strong>に特化した教材です。</p>
+<aside class="warning"><h2 is-upgraded>プログル技術の特徴</h2>
+<ul>
+<li>先生のメールアドレス1つだけで、始められる</li>
+<li>指導案や授業プリントやスライドも用意されている</li>
+<li>先生は生徒1人1人の提出状況・結果を教員用メニューから確認できる</li>
+<li>チャットアプリの仕組みをプログラミングしながら知ることができる</li>
+<li>プログラミングをしながら、合わせてパスワードとセキュリティの関連性やSNSを始めとしたネットリテラシーも学習できる</li>
+</ul>
+</aside>
+<p>※生徒のメールアドレスは必要ありません</p>
+<p>※生徒は家庭でも学習することができます</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="先生アカウントの作成" duration="5">
+        <aside class="warning"><p>（1）メールアドレスを1つ用意する。</p>
+<p>※〜@code.or.jpからメールを受信できるようにしておいて下さい。</p>
+</aside>
+<aside class="warning"><p>（2）プログル技術の<a href="https://middle.proguru.jp/" target="_blank">トップメニュー</a>へ</p>
+<p>先生→新規登録をクリック</p>
+<p class="image-container"><img style="width: 587.00px" src="img/a658745e7e47e2cb.png"></p>
+</aside>
+<aside class="warning"><p>（3）氏名、メールアドレス、パスワードを入力する</p>
+<p class="image-container"><img style="width: 251.50px" src="img/948caadc92e7f102.png"></p>
+</aside>
+<aside class="warning"><p>（4）確認メールが届いているか確認する</p>
+<p class="image-container"><img style="width: 318.50px" src="img/54de2012e150ae92.png"></p>
+<p>※受信が確認できない場合は、迷惑メールに分類されていないか、メールアドレスが正しいか、もう一度確認してください。</p>
+</aside>
+<aside class="warning"><p>（5）確認メールのURLをクリックして登録を完了する</p>
+<p class="image-container"><img style="width: 587.00px" src="img/fdecd8605ff352a6.png"></p>
+</aside>
+<p>先生アカウントが作れたら、トップメニューからログインしてください。</p>
+<p>次はクラスの登録を行います。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="クラスの登録/削除" duration="3">
+        <h2 is-upgraded>クラスの登録</h2>
+<aside class="warning"><p>「クラスを登録する」をクリックする</p>
+<p class="image-container"><img style="width: 587.00px" src="img/2bb081838f6c48e5.png"></p>
+</aside>
+<aside class="warning"><p>クラスを作るのに必要な情報を入力する</p>
+<p class="image-container"><img style="width: 364.17px" src="img/a6e7dced92314900.png"></p>
+<p>※クラス名はアルファベット、数字、ひらがな、カタカナ、漢字が使えます</p>
+<p>※クラス人数の最大は50名です</p>
+</aside>
+<p>この後は必要な数のクラスを追加して下さい。</p>
+<h2 is-upgraded>クラスの削除</h2>
+<aside class="warning"><p>ゴミ箱マークをクリック</p>
+<p class="image-container"><img style="width: 563.50px" src="img/7bb5d26ecd6cb35d.png"></p>
+</aside>
+<p>年度をまたいでもシステムではクラスの消去は自動では行いません。</p>
+<aside class="special"><p>年度末に不要になったクラスは削除するようにしてください。</p>
+</aside>
+<p>クラスを登録したら、授業で使用する初期パスワードを準備しましょう。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="生徒に初期パスワードを配布する" duration="5">
+        <h2 is-upgraded>初期パスワードを紙で配布する</h2>
+<aside class="warning"><p>「生徒一覧を見る」をクリックする</p>
+<p class="image-container"><img style="width: 587.00px" src="img/75ecaf5ce31752a7.png"></p>
+</aside>
+<aside class="warning"><p>「初期パスワードを印刷する」をクリックする</p>
+<p class="image-container"><img style="width: 587.00px" src="img/39906a4af2637dc2.png"></p>
+</aside>
+<aside class="warning"><p>印刷した紙をハサミなどで切断して配布します。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/dc5a98a4b19a060d.png"></p>
+</aside>
+<h2 is-upgraded>初期パスワードをメールやGoogleClassRoomなどで配布する場合</h2>
+<aside class="warning"><p>途中までは紙で印刷する方法と同じです</p>
+<p>「初期パスワード一覧のCSVファイルをダウンロードする」をクリックするとCSVファイルが出力されます</p>
+<p class="image-container"><img style="width: 402.35px" src="img/dc5a98a4b19a060d.png"></p>
+<p>CSVファイルをメールやGoogleClassRoomなどで生徒に配布してください。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="転入/転出の方法" duration="5">
+        <h2 is-upgraded>転入生を追加する場合</h2>
+<aside class="warning"><p>「生徒一覧を見る」をクリックする</p>
+<p class="image-container"><img style="width: 587.00px" src="img/212fca5e6cd559a2.png"></p>
+</aside>
+<aside class="warning"><p>「生徒を登録する」をクリックする</p>
+<p class="image-container"><img style="width: 587.00px" src="img/aa8c8709fa560905.png"></p>
+</aside>
+<aside class="warning"><p>追加する生徒の出席番号を入力する</p>
+<p>※重複しないように注意</p>
+<p class="image-container"><img style="width: 407.00px" src="img/9bfe369f7536c566.png"></p>
+<p>この後は初期パスワードを生徒に伝えて、初期登録を行います。</p>
+</aside>
+<h2 is-upgraded>転出者を削除する</h2>
+<aside class="warning"><p>転出する生徒の「ゴミ箱マーク」をクリックする</p>
+<p class="image-container"><img style="width: 587.00px" src="img/d12491128f21aeb2.png"></p>
+<p>不用意に学習中のデータを削除しないように気をつけてください。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="生徒がパスワードを忘れた場合" duration="0">
+        <aside class="warning"><h2 is-upgraded>生徒がパスワードを紛失したり、忘れてしまった場合</h2>
+<p>「リセット」をクリックする → 新たに初期パスワードが発生 →生徒に伝えて再登録をさせる</p>
+<p class="image-container"><img style="width: 587.00px" src="img/72185f14b6175c95.png"></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="パスワードがロックされた場合" duration="0">
+        <aside class="warning"><p>パスワードを10回間違えるとシステムがロックしてしまいます。</p>
+<p>カギマークをクリックするとロックを外せます。</p>
+<p>※生徒がパスワードを忘れてしまっていたら、初期化して初期パスワードから再度、パスワードを登録し直してください。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/e971dd666854fa.png"></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="先生アカウントの管理" duration="0">
+        <aside class="warning"><p>登録されている先生の名前やメールアドレスは「アカウント設定」から変更できます。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/a4c5dadc6d26d8fd.png"></p>
+<p>※退会してしまうと生徒の授業に関するデータなどが全て消えてしまいます。十分注意してください。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

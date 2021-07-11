@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-07-09T06:51:54Z",
+  "id": "Lesson4",
+  "duration": 26,
+  "title": "プログル技術（準備編）",
+  "authors": "i.seongoku",
+  "summary": "プログル技術の研修資料_4",
+  "source": "13NVRrDFAsbpsUYK-iaQEgy_Ao7VRAJ_GnPPur_dxjIo",
+  "theme": "original-lesson",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "original_lesson"
+  ],
+  "tags": [],
+  "feedback": "https://forms.gle/RgmzXnQRu5XqgL3x6",
+  "url": "Lesson4"
+}
