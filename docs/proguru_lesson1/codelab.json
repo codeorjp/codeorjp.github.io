@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-05-18T04:57:43Z",
+  "id": "proguru_lesson1",
+  "duration": 3,
+  "title": "プログル技術_第1回 双方向性のあるコンテンツとメディア",
+  "authors": "i.seongoku",
+  "summary": "プログル技術の研修資料です",
+  "source": "1kYTrs90_ZeDIBJf_XKCkbIsRW3AHU5zj9or1M3_I0q0",
+  "theme": "go",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "Go"
+  ],
+  "tags": [],
+  "feedback": "https://forms.gle/RgmzXnQRu5XqgL3x6",
+  "url": "proguru_lesson1"
+}
