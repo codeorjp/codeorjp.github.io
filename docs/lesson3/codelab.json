@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-07-09T06:36:45Z",
+  "id": "Lesson3",
+  "duration": 28,
+  "title": "プログラミング教育導入の背景",
+  "authors": "i.seongoku",
+  "summary": "プログル技術の研修資料_3",
+  "source": "10_2Aq118Mf_gQaQaTuWf421sjWLhrzr5dSMld5WN0Bk",
+  "theme": "original-lesson",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "original_lesson"
+  ],
+  "tags": [],
+  "feedback": "https://forms.gle/RgmzXnQRu5XqgL3x6",
+  "url": "Lesson3"
+}
