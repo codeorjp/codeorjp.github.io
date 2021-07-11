@@ -1,1 +1,176 @@
-a
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>プログル技術_第3回 Lesson1チャット画面をデザインしよう！</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="proguru_lesson3"
+                  title="プログル技術_第3回 Lesson1チャット画面をデザインしよう！"
+                  environment="web"
+                  feedback-link="https://forms.gle/RgmzXnQRu5XqgL3x6">
+    
+      <google-codelab-step label="この授業で学ぶこと" duration="3">
+        <h2 class="checklist" is-upgraded>What you&#39;ll learn</h2>
+<ul class="checklist">
+<li>伝言板のデザインを行うことができる。</li>
+<li>ユニバーサルデザインに配慮した画面を設計することができる。</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="前回の振り返り" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p>スライド</p>
+</td><td colspan="1" rowspan="1"><p>指導者</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 328.00px" src="img/df2024d690bc5313.png"></p>
+</td><td colspan="1" rowspan="1"><p>前回、初期登録が終わったところで授業がおわりました。</p>
+<p>今回は、ログインをしてみましょう。新規登録ではないので注意してください。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 328.00px" src="img/6c708fc84f4a1978.png"></p>
+</td><td colspan="1" rowspan="1"><p>ログイン画面で、クラスID、出席番号、自分のパスワードを入力しましょう。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 328.00px" src="img/c8bcda47e5f62e4c.png"></p>
+</td><td colspan="1" rowspan="1"><p>このホーム画面になったら準備完了です。</p>
+<p>正面に注目してください。</p>
+</td></tr>
+</table>
+<p>パスワードを忘れてしまった生徒はリセットをかけて、もう一度初期登録から行わせてください。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="今日のめあて" duration="0">
+        <ul>
+<li>伝言板のデザインを行うことができる。</li>
+<li>ユニバーサルデザインに配慮した画面を設計することができる。</li>
+</ul>
+<p>ここで質問です。</p>
+<h2 is-upgraded>ユニバーサルデザインとは何でしょう？</h2>
+<p>教科書やWebサイトを調べてもいいですよ。</p>
+<p>調べた結果を<strong>ワークシートに記入</strong>してみましょう</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="伝言板のデザインって？" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p>スライド</p>
+</td><td colspan="1" rowspan="1"><p>指導者</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 399.00px" src="img/ef1776048e738cba.png"></p>
+</td><td colspan="1" rowspan="1"><p>画面を見ると3色の画面が見えます。</p>
+<p>どれが好きですか？</p>
+<p>どれが見やすいですか？</p>
+<p>人それぞれ感じる印象は違いますね？</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 399.00px" src="img/dfd44ef885b0ee10.png"></p>
+</td><td colspan="1" rowspan="1"><p>あなたはどの色の組み合わせに目が行きますか？</p>
+<p>どれが目立つと思いますか？</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 399.00px" src="img/1984b3a265e7f8a0.png"></p>
+</td><td colspan="1" rowspan="1"><p>実は皆さんは街中でこの答えを普段から目にしています。</p>
+<p>これらの標識を見たことはありますね。どうですか？</p>
+<p>人に認識されやすい色というのはある程度決まっています。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 399.00px" src="img/f856638e5ab0ecf2.png"></p>
+</td><td colspan="1" rowspan="1"><p>また、色だけではなく明るさについても、明暗がはっきりしている方が認識しやすいです。</p>
+</td></tr>
+</table>
+<h2 is-upgraded>画面のデザインを考える上で色は大切な要素です。</h2>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Lesson1を始めましょう" duration="0">
+        <p class="image-container"><img style="width: 601.70px" src="img/fb7316743ab15a7d.png"></p>
+<p>Lesson1-1から1-8まで順番に学習していきます。</p>
+<p>指導については、1ステージごとに説明を入れる or 説明をいれないで生徒のペースで学習を進める、のどちらでも大丈夫です。</p>
+<p>生徒、学校の状況に合わせて選んでください。</p>
+<p>下記、先生メニューの<strong>課題一覧</strong>からクラスの進捗状況を確認して、Lesson1-8の前に説明を入れるのがおすすめです。</p>
+<p class="image-container"><img style="width: 527.50px" src="img/edb5387f4e18347c.png"></p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="ステージごとのポイント" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/c4465ecd1bf4c2e3.png"></p>
+</td><td colspan="1" rowspan="1"><p>先ほどのスライドもあわせて、目立つ色の組み合わせを考えましょう。</p>
+<p>→<strong>ワークシートに記入しましょう</strong></p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/c4d684c8d94a09e5.png"></p>
+</td><td colspan="1" rowspan="1"><p>画面の通り</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/f5453bd38a6ba642.png"></p>
+</td><td colspan="1" rowspan="1"><p>画面の通り</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/769166eb9bdbede3.png"></p>
+</td><td colspan="1" rowspan="1"><p>画面の通り</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/f1a462a502fddd0c.png"></p>
+</td><td colspan="1" rowspan="1"><p>画面の通り</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/62fa8e35858b26d8.png"></p>
+</td><td colspan="1" rowspan="1"><p>画面の通り</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/ab509e95799471ab.png"></p>
+</td><td colspan="1" rowspan="1"><p>画面の通り。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/b7e836310cf426da.png"></p>
+</td><td colspan="1" rowspan="1"><p>進捗状況を確認しながら、クラスの半数がステージ８まで到達したらこのスライドを説明</p>
+<p>Lesson1-1~7で学習したことを1-8で表現しましょう。</p>
+<p>その際、使ってもらう人は誰？</p>
+<p>その人に見やすい・使いやすいチャット画面とはどのようなものか？考えながら作りましょう。→制作できたらステージ８で工夫した点を<strong>ワークシートに記入する</strong></p>
+</td></tr>
+</table>
+<p>※チャットツールの利用者は生徒に考えさせても、指導者が一律で与えてもどちらでもよい。</p>
+<p>※年配の方や色覚障害のある方の見にくい色などをWebで調べてもよい。</p>
+<p>※ステージ８で<strong>ユニバーサルデザイン</strong>に意識を向けておかないと、制作物がただのカラフルなチャット画面になってしまうので注意</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="まとめ" duration="0">
+        <h2 is-upgraded>この時間の目標</h2>
+<ul>
+<li>伝言板のデザインを行うことができる。</li>
+<li>ユニバーサルデザインに配慮した画面を設計することができる。</li>
+</ul>
+<h2 is-upgraded>生徒に質問しながら本時をまとめる</h2>
+<p>掲示板の基本的なデザインは指示通りに行うことはできましたか？</p>
+<p>ユニバーサルデザインを意識してユーザーに使いやすい掲示板を作ることはできましたか？</p>
+<h2 is-upgraded>次回はプログル技術を使ってネットワーク通信について学習しましょう。</h2>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
