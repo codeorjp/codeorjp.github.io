@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-05-18T06:49:15Z",
+  "id": "proguru_lesson5",
+  "duration": 3,
+  "title": "プログル技術_第5回 Lesson3文字を送受信しよう！",
+  "authors": "i.seongoku",
+  "summary": "プログル技術の研修資料です",
+  "source": "1H835TCXQ-stV4BltGJlixXhwglCf5jlsg4ApJ3OXOec",
+  "theme": "go",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "Go"
+  ],
+  "tags": [],
+  "feedback": "https://forms.gle/RgmzXnQRu5XqgL3x6",
+  "url": "proguru_lesson5"
+}
