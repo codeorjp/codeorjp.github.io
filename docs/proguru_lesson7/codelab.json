@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-05-18T06:51:52Z",
+  "id": "proguru_lesson7",
+  "duration": 3,
+  "title": "プログル技術_第7回 Lesson5画像を送受信しよう！",
+  "authors": "i.seongoku",
+  "summary": "プログル技術の研修資料です",
+  "source": "17U0LjF4v2mNFlvrJ145gk-DTgHLUCCDVf9z_KMcmff0",
+  "theme": "go",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "Go"
+  ],
+  "tags": [],
+  "feedback": "https://github.com/budougumi0617/claat-sample/issues",
+  "url": "proguru_lesson7"
+}
