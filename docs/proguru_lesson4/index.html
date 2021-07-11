@@ -1,0 +1,161 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>プログル技術_第4回 Lesson2サーバと通信しよう！</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="proguru_lesson4"
+                  title="プログル技術_第4回 Lesson2サーバと通信しよう！"
+                  environment="web"
+                  feedback-link="https://forms.gle/RgmzXnQRu5XqgL3x6">
+    
+      <google-codelab-step label="この授業で学ぶこと" duration="3">
+        <h2 class="checklist" is-upgraded>What you&#39;ll learn</h2>
+<ul class="checklist">
+<li>サーバと通信をしてメッセージを送信することができる。 </li>
+<li>順次処理、反復処理、分岐処理を理解してプログラムを制作することができる。</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="プログル技術の確認" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p>スライド</p>
+</td><td colspan="1" rowspan="1"><p>指導者</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 328.00px" src="img/df2024d690bc5313.png"></p>
+</td><td colspan="1" rowspan="1"><p>前回同様、ログインする際は気をつけましょう。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 328.00px" src="img/6c708fc84f4a1978.png"></p>
+</td><td colspan="1" rowspan="1"><p>ログイン画面で、クラスID、出席番号、自分のパスワードを入力しましょう。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 328.00px" src="img/c8bcda47e5f62e4c.png"></p>
+</td><td colspan="1" rowspan="1"><p>このホーム画面になったら準備完了です。ここまでは自分で始業時に準備できるようになっておきましょう。</p>
+</td></tr>
+</table>
+<p>パスワードを忘れてしまった生徒はリセットをかけて、もう一度初期登録から行わせてください。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="今日のめあて" duration="0">
+        <ul>
+<li>サーバと通信をしてメッセージを送信することができる。 </li>
+<li>順次処理、反復処理、分岐処理を理解してプログラムを制作することができる。 </li>
+</ul>
+<h2 is-upgraded>サーバってどんなもの？</h2>
+<p>必要に応じて調べてみてください。</p>
+<p class="image-container"><img style="width: 508.50px" src="img/a06f883687294dc0.png"></p>
+<p>生徒の皆さんが使っているパソコンなどは直接、通信をやり取りしてメッセージを送っているわけじゃないということを知ってもらいます。（Bluetoothのように端末間で直接通信を行う規格もありますが、今回はサーバを介して通信を行います）</p>
+<p class="image-container"><img style="width: 497.50px" src="img/f58ee4026a36435.png"></p>
+<p>※生徒は端末間同士が図のように直接やり取りしているイメージを持っています。</p>
+<p>そのイメージを払しょくできるように指導をしていきましょう。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="プログラミングの基礎" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p>スライド</p>
+</td><td colspan="1" rowspan="1"><p>指導者</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 399.00px" src="img/3cee494cfbf380e1.png"></p>
+</td><td colspan="1" rowspan="1"><p>Lesson２を始めていきましょう。</p>
+<p>ステージ１では画面にHello World！と表示させます。</p>
+<p>やってみましょう。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 399.00px" src="img/294081c28b9a4d92.png"></p>
+</td><td colspan="1" rowspan="1"><p>決められた命令を上から順番に実行されるプログラムのことを<strong>順次処理</strong>といいます。</p>
+<p>運動会のプログラムも順番通りに競技を行いますね。だから、運動会も順次処理にあたります。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 399.00px" src="img/deeda2e63ebd56c0.png"></p>
+</td><td colspan="1" rowspan="1"><p>次はHelloを10回表示するプログラムを作りましょう。</p>
+<p>同じことを繰り返す処理を<strong>反復処理</strong>と言います。</p>
+</td></tr>
+</table>
+<p>プログラムの基本はここまでです。</p>
+<p>次は、サーバとの通信です。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="サーバと通信しよう" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/5da0d05a2639afa0.png"></p>
+</td><td colspan="1" rowspan="1"><p>プログラムを作って実行してみましょう。</p>
+<p>「<strong>接続成功しました！</strong>」と表示されます。</p>
+<p>このときの、<strong>192.168.0.1</strong>という数字はIPアドレスです。インターネット上のサーバの住所になります。</p>
+<p>でも、これだけだと何が起きたかよくわかりませんね。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/6fa93cd0a0f53d9b.png"></p>
+</td><td colspan="1" rowspan="1"><p>プログラムを作って「こんにちは」と送ったけど、画面には「こんにちは」が見当たりません。</p>
+<p>どこへ行ってしまったのでしょう...</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/7e5d7b5f9dc2d491.png"></p>
+</td><td colspan="1" rowspan="1"><p>先生用管理画面からチャットを表示してください。</p>
+<p>ここに「<strong>こんにちは</strong>」と表示されているはずです。自分の名前も確認できますか？</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/9a3fc0bd6077e731.png"></p>
+</td><td colspan="1" rowspan="1"><p>今度は自分のニックネームを送ってみましょう。</p>
+<p>そして応答結果が表示されますか？</p>
+<p>正面のスクリーンで自分のニックネームがちゃんと送信されているかも確認しておきましょう。</p>
+<p>サーバにメッセージを送る動作が少しわかってきましたね。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/cf7bf66b2515c389.png"></p>
+</td><td colspan="1" rowspan="1"><p>次のステージは<strong>分岐処理</strong>を行います。分岐処理を考える場合、家を出る時を考えてみましょう。皆さんは今朝、傘をさして学校に来ましたか？</p>
+<p>無意識のうちに図のような判断をして、学校に来たはずです。</p>
+<p>このように、ある条件によって実行するプログラムを決定するしくみを分岐処理と言います。</p>
+<p>それではステージ７をやってみましょう。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 418.00px" src="img/55104fb2038ff059.png"></p>
+</td><td colspan="1" rowspan="1"><p>ステージ７は無事に動作しましたか？</p>
+<p>そのプログラムの動きを<strong>プリントのフローチャートに書き表してみましょう</strong>。</p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="まとめ" duration="0">
+        <h2 is-upgraded>この時間の目標</h2>
+<ul>
+<li>サーバと通信をしてメッセージを送信することができる。 </li>
+<li>順次処理、反復処理、分岐処理を理解してプログラムを制作することができる。 </li>
+</ul>
+<h2 is-upgraded>どうでしょうか？</h2>
+<h2 is-upgraded>サーバというものが少し身近に感じられるようになったでしょうか？</h2>
+<p>今日はサーバに対して単語を送っただけですが、LINEのように文章は送れませんでした。</p>
+<p>次回はいよいよ文章をやり取りするしくみをプログラミングしていきましょう。</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

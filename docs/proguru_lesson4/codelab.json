@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-05-18T06:46:17Z",
+  "id": "proguru_lesson4",
+  "duration": 3,
+  "title": "プログル技術_第4回 Lesson2サーバと通信しよう！",
+  "authors": "i.seongoku",
+  "summary": "プログル技術の研修資料です",
+  "source": "1Y9RkXzpAYEbDJEjVyjrc2h7lkGAk9o2XrJgxB6e1rAI",
+  "theme": "go",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "Go"
+  ],
+  "tags": [],
+  "feedback": "https://forms.gle/RgmzXnQRu5XqgL3x6",
+  "url": "proguru_lesson4"
+}
