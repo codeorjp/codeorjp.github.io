@@ -1,1 +1,181 @@
-1
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>プログル技術_第6回 Lesson4画像を送受信しよう！</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/codelab-elements/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="proguru_lesson6"
+                  title="プログル技術_第6回 Lesson4画像を送受信しよう！"
+                  environment="web"
+                  feedback-link="https://forms.gle/RgmzXnQRu5XqgL3x6">
+    
+      <google-codelab-step label="この授業で学ぶこと" duration="3">
+        <h2 class="checklist" is-upgraded>What you&#39;ll learn</h2>
+<ul class="checklist">
+<li>サーバと通信をして画像を送受信することができる。</li>
+<li>送受信する際に、データ量を考慮してファイルの圧縮やリサイズができる。</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="画像の表示と圧縮、リサイズ" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p>スライド</p>
+</td><td colspan="1" rowspan="1"><p>指導者</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 369.00px" src="img/bb7c98abd5433553.png"></p>
+</td><td colspan="1" rowspan="1"><p>ステージ1をプログラミングしてみる。</p>
+<p>サンプル画像が表示されます。</p>
+<p>Lesson3で学習したプログラミングを</p>
+<p>覚えていれば大丈夫ですね？</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 369.00px" src="img/6b9f5b7a5ca1f8e3.png"></p>
+</td><td colspan="1" rowspan="1"><p>ステージ2では画像を<strong>圧縮</strong>し、<strong>リサイズ</strong>します。</p>
+<p>→どちらの方法もデータ量を減らすことができます。</p>
+<p><strong>圧縮は...</strong>面積に変化はありませんが、その画像を</p>
+<p>構成する点（ドット）の数を減らします。</p>
+<p>＝解像度が下がる</p>
+<p>（拡大すると画像が粗くなったのがわかります）</p>
+<p><strong>リサイズは...</strong>大きさを変更すること。</p>
+<p>当然、A4サイズの写真をハガキ大のサイズに</p>
+<p>変更すればそのデータは小さくなりますよね。</p>
+<p>でも、画像は粗くなります。</p>
+<p>同じようで少し違うので、理解しておきましょう。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 160.29px" src="img/beadbbcd3f3754f2.png"><img style="width: 255.50px" src="img/bdc18940224b2cb7.png"></p>
+</td><td colspan="1" rowspan="1"><p>＜補足＞</p>
+<p>画像の圧縮率について理解を深めるために、</p>
+<p>ステージ2で解像度を10％以下に下げてみると、</p>
+<p>画像が変化しわかりやすくなります。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 369.00px" src="img/d96306d1b1038e42.png"></p>
+</td><td colspan="1" rowspan="1"><p>ステージ3では条件分岐とリサイズの考えを</p>
+<p>合わせてプログラミングしてみましょう。</p>
+<p>ちなみに写真の縦横比のことを<strong>アスペクト比</strong>と</p>
+<p>言います。</p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="画像の送信" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p>スライド</p>
+</td><td colspan="1" rowspan="1"><p>指導者</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 399.00px" src="img/ea2fc44ddff7f9fa.png"></p>
+</td><td colspan="1" rowspan="1"><p>ステージ4に取り組んでみましょう。</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 386.21px" src="img/e1d32e228c555555.png"></p>
+</td><td colspan="1" rowspan="1"><p>前者の圧縮してから送信の方が、ネットワーク上のトラフィック（渋滞）に影響しない。</p>
+<p>でも、圧縮すると画像が粗くなる！</p>
+<p>どちらを優先する？</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 294.00px" src="img/a746a263406a7ab4.png"></p>
+</td><td colspan="1" rowspan="1"><p>※ワークシートに何％くらいに圧縮して送信するか記入</p>
+<p>問）何でその数字にしたの？</p>
+<p>→何を優先するのか、画像の美しさとデータ量が反比例であることを理解しているか？</p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="選択した画像の送受信" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 369.00px" src="img/113a44cf88b6eaef.png"></p>
+</td><td colspan="1" rowspan="1"><p>変数【送信画像】に選んだ画像を保存→表示の順序</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 349.50px" src="img/1c940626b51c2d66.png"></p>
+<p class="image-container"><img style="width: 369.00px" src="img/13f813077dcdbd91.png"></p>
+</td><td colspan="1" rowspan="1"><p>ステージ4〜6を通して圧縮・リサイズについて考えてみよう。</p>
+<p>（ワークシートを見ながら）</p>
+<p>通信量を減らす方法を考えよう。</p>
+<p>リサイズするときの問題点は？</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 369.00px" src="img/fc922e19684221ae.png"><img style="width: 369.00px" src="img/f222395ac8dbc6ec.png"></p>
+</td><td colspan="1" rowspan="1"><p>（補足問題）</p>
+<p>この2つのプログラムの違いは何でしょう？</p>
+<ul>
+<li>圧縮してから送信</li>
+<li>送信してから圧縮</li>
+</ul>
+<p>やっていることは同じように見えるがどちらの方が良いでしょう？</p>
+<p>※送る前に圧縮してファイル量を減らす</p>
+<p>→送信（トラフィックの軽減に繋がる）</p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="サーバから画像の受信" duration="0">
+        <table>
+<tr><td colspan="1" rowspan="1"><p>スライド</p>
+</td><td colspan="1" rowspan="1"><p>指導者</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 404.00px" src="img/f84aa9b0b3ba8c50.png"></p>
+</td><td colspan="1" rowspan="1"><p>受信についてはテキストの時と同様</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 404.00px" src="img/fc40c2f05978fa3f.png"></p>
+</td><td colspan="1" rowspan="1"><p>送信時と同様</p>
+<p>（余裕があれば）受信した画像ファイルを</p>
+<p>リサイズや圧縮する理由は？</p>
+<p>A）送信した人がリサイズして送らないと</p>
+<p>チャット画面に収まらないetc...</p>
+</td></tr>
+<tr><td colspan="1" rowspan="1"><p class="image-container"><img style="width: 404.00px" src="img/81437ba8833f0102.png"></p>
+</td><td colspan="1" rowspan="1"><p>Lesson4の総まとめ</p>
+<p>ただしステージ9でアスペクト比を固定したまま</p>
+<p>リサイズできるブロックが登場するので説明を</p>
+<p class="image-container"><img style="width: 168.00px" src="img/96a35ba8b647e7f9.png"></p>
+</td></tr>
+</table>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="まとめ" duration="0">
+        <h2 is-upgraded>この時間の目標</h2>
+<ul>
+<li>サーバと通信をして画像を送受信することができる。</li>
+<li>送受信する際に、データ量を考慮してファイルの圧縮やリサイズができる。</li>
+</ul>
+<h2 is-upgraded>どうでしょうか？</h2>
+<p>Lesson3のテキストに続き、Lesson4では画像の送受信を行いました。</p>
+<p>画像はテキストよりデータ量が大きいメディアなので圧縮やリサイズについても学習しました。この考え方は動画を送受信するときにも役立つ考え方です。しっかり理解しておきましょう。</p>
+<p>次回Lesson5は今までの総まとめとして、テキストと画像を送受信できるチャットツールをプログラミングしていきます。</p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/codelab-elements/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/prettify.js"></script>
+  <script src="https://storage.googleapis.com/codelab-elements/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>

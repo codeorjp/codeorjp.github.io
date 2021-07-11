@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-05-18T06:50:37Z",
+  "id": "proguru_lesson6",
+  "duration": 3,
+  "title": "プログル技術_第6回 Lesson4画像を送受信しよう！",
+  "authors": "i.seongoku",
+  "summary": "プログル技術の研修資料です",
+  "source": "1GWiV0hV3xeKUp88EwuDcgWDBM5e2FfS11JUV_H2Pxhg",
+  "theme": "go",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "Go"
+  ],
+  "tags": [],
+  "feedback": "https://forms.gle/RgmzXnQRu5XqgL3x6",
+  "url": "proguru_lesson6"
+}
