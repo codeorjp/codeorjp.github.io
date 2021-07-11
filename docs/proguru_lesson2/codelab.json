@@ -1,0 +1,23 @@
+{
+  "environment": "web",
+  "format": "html",
+  "prefix": "https://storage.googleapis.com",
+  "mainga": "UA-49880327-14",
+  "updated": "2021-05-18T06:31:49Z",
+  "id": "proguru_lesson2",
+  "duration": 3,
+  "title": "プログル技術_第2回 課題を発見し、課題設定を行おう",
+  "authors": "i.seongoku",
+  "summary": "プログル技術の研修資料です",
+  "source": "1jn3uX78y_IB3Mgd377b4Db_Gdp5g_iZ3YuRCoQFPKlw",
+  "theme": "go",
+  "status": [
+    "draft"
+  ],
+  "category": [
+    "Go"
+  ],
+  "tags": [],
+  "feedback": "https://forms.gle/RgmzXnQRu5XqgL3x6",
+  "url": "proguru_lesson2"
+}
