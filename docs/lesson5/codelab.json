@@ -3,9 +3,9 @@
   "format": "html",
   "prefix": "https://storage.googleapis.com",
   "mainga": "UA-49880327-14",
-  "updated": "2021-08-16T08:29:58Z",
-  "id": "Lesson5",
-  "duration": 11,
+  "updated": "2022-03-11T05:03:42Z",
+  "id": "Lesson6",
+  "duration": 16,
   "title": "プログル技術（授業で先生が行う作業）",
   "authors": "i.seongoku",
   "summary": "プログル技術の研修資料_5",
@@ -19,5 +19,5 @@
   ],
   "tags": [],
   "feedback": "https://forms.gle/RgmzXnQRu5XqgL3x6",
-  "url": "Lesson5"
+  "url": "Lesson6"
 }
