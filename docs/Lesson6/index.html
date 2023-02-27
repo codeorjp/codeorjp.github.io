@@ -1,0 +1,307 @@
+
+<!doctype html>
+
+<html>
+<head>
+  <meta name="viewport" content="width=device-width, minimum-scale=1.0, initial-scale=1.0, user-scalable=yes">
+  <meta name="theme-color" content="#4F7DC9">
+  <meta charset="UTF-8">
+  <title>プログル技術（SSO対応 準備編）</title>
+  <link rel="stylesheet" href="//fonts.googleapis.com/css?family=Source+Code+Pro:400|Roboto:400,300,400italic,500,700|Roboto+Mono">
+  <link rel="stylesheet" href="//fonts.googleapis.com/icon?family=Material+Icons">
+  <link rel="stylesheet" href="https://storage.googleapis.com/claat-public/codelab-elements.css">
+  <style>
+    .success {
+      color: #1e8e3e;
+    }
+    .error {
+      color: red;
+    }
+  </style>
+</head>
+<body>
+  <google-codelab-analytics gaid="UA-49880327-14"></google-codelab-analytics>
+  <google-codelab codelab-gaid=""
+                  id="Lesson6"
+                  title="プログル技術（SSO対応 準備編）"
+                  environment="web"
+                  feedback-link="https://forms.gle/RgmzXnQRu5XqgL3x6">
+    
+      <google-codelab-step label="この章で学ぶこと" duration="3">
+        <h2 class="checklist" is-upgraded>What you&#39;ll learn</h2>
+<ul class="checklist">
+<li>Googleアカウントを用いて先生アカウントの作成</li>
+<li>Google Classroomのデータをインポートしてクラスの作成</li>
+<li>生徒のログイン方法</li>
+<li>転出/転入の対応</li>
+<li>クラスの削除</li>
+<li>パスワードを忘れたり紛失したら</li>
+<li>パスワードロックがかかったら</li>
+<li>先生アカウントの管理</li>
+<li>先生の異動に伴うアカウント管理</li>
+</ul>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Googleアカウントを使った先生アカウントの作成" duration="5">
+        <aside class="warning"><p>（1）Googe アカウントを1つ用意する。</p>
+<p>※個人で作成したアカウント（〜@gmail.com）でも登録可能です。</p>
+<p>生徒のアカウント登録にGoogle Classroomの名簿を流用したい場合は、教育委員会等から発行されている先生のアカウントをご用意ください。（〜＠xxxxx.ed.jp）</p>
+</aside>
+<p><a href="https://iroha.corecon.co.jp/post-10318/" target="_blank">SSO（シングルサインオン）機能</a>とは（別サイトへ移動します）</p>
+<p>現在、SSOに利用できるのはGoogleのアカウントのみです。</p>
+<aside class="warning"><p>（2）プログル技術の<a href="https://middle.proguru.jp/" target="_blank">トップメニュー</a>へ</p>
+<p>先生→新規登録をクリック</p>
+<p class="image-container"><img style="width: 587.00px" src="img/d10294f172fa8c5.png"></p>
+</aside>
+<aside class="warning"><p>（3）「ソーシャルアカウントで新規登録/ログイン」をクリックする</p>
+<p class="image-container"><img style="width: 245.50px" src="img/6915906346ffe09f.png"></p>
+</aside>
+<aside class="warning"><p>（4）Googleアカウントで新規登録/ログインをクリックする</p>
+<p class="image-container"><img style="width: 270.50px" src="img/4e476266ac65d26a.png"></p>
+</aside>
+<aside class="warning"><p>（5）利用するアカウントをクリックする</p>
+<p class="image-container"><img style="width: 267.36px" src="img/8dde9f644db29aae.png"></p>
+<p>※必要に応じてGoogleアカウントのパスワードや2段階認証を求められます。</p>
+</aside>
+<aside class="warning"><p>（6）ログインできると先生用の管理画面が表示される</p>
+<p class="image-container"><img style="width: 587.00px" src="img/1e37c4a097366284.png"></p>
+</aside>
+<p>先生アカウントが作れたら、次回からトップメニューの「ログイン」から入れます。</p>
+<p>次はクラスの登録を行います。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="既存の先生アカウントにGoogleアカウントを紐付ける" duration="5">
+        <p>新規にGoogleアカウントを用いて先生アカウントを作成する場合は画面下のBackで1ページ戻ってください。</p>
+<aside class="warning"><p>メールアドレスとパスワードを用いて作られた先生アカウントに対し、Googleアカウントを紐付けることにより、ログイン時のパスワード入力を省略したり、Google Classroomからデータを引用して授業クラスを作成することができます。</p>
+</aside>
+<h2 is-upgraded>管理メニュー → アカウント設定</h2>
+<aside class="warning"><p class="image-container"><img style="width: 587.00px" src="img/5bfd9b50c461897f.png"></p>
+</aside>
+<aside class="warning"><p>アカウントを選択して、連携完了。</p>
+<p class="image-container"><img style="width: 268.46px" src="img/a862c436fa15ba62.png"></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="クラスの登録（Google Classroomからインポートして作成する場合）" duration="0">
+        <p>Google Classroomからインポートしないでクラス登録する場合は<a href="https://codeorjp.github.io/lesson4/#5" target="_blank">こちら</a>。</p>
+<aside class="warning"><p>「GoogleClassroomのクラスで登録」をクリックする。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/d08f52e5488923b0.png"></p>
+</aside>
+<aside class="warning"><p>インポートに利用する先生のアカウントを選択し、Googleアカウントへのアクセスを許可する。</p>
+<p class="image-container"><img style="width: 456.50px" src="img/58f260c66655bd9.png"></p>
+</aside>
+<aside class="warning"><p>インポート可能なクラスが表示されているので、インポートしたいクラスを選択する。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/22499241660cba1a.png"></p>
+<p>※オーナー（主担任）になっているGoogle Classroom 以外は表示されません。</p>
+</aside>
+<aside class="warning"><p>生徒がインポートされ、クラスが作成されました。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/16de346e6549d5c.png"></p>
+</aside>
+<p>※あとは必要なクラスを同じようにインポートしてください。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="生徒のログイン①" duration="5">
+        <h2 is-upgraded>アカウントの選択</h2>
+<p>Google Classroomからインポートしたクラスを用いる場合は、<strong>生徒に初期パスワード等を配布する必要はありません。</strong></p>
+<p>生徒のログイン操作は以下の通りです。</p>
+<aside class="warning"><p>生徒の「ログイン」をクリックする</p>
+<p class="image-container"><img style="width: 587.00px" src="img/8d0180657f0d9004.png"></p>
+</aside>
+<aside class="warning"><p>「Googleアカウントでログイン」をクリックする</p>
+<p class="image-container"><img style="width: 310.11px" src="img/3807d381fb21beb1.jpeg"></p>
+</aside>
+<aside class="warning"><p>アカウントの選択をする。</p>
+<p class="image-container"><img style="width: 319.16px" src="img/ba80775d388e20f1.png"></p>
+</aside>
+<aside class="warning"><p>プログル技術がGoogleアカウントの中で利用する内容について確認し、続行をクリックする。</p>
+<p class="image-container"><img style="width: 344.93px" src="img/7cc5aac90636895b.png"></p>
+<p>※プログル技術はGoogleアカウントやClassroomから5つの情報を利用しています。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="生徒のログイン②" duration="5">
+        <h2 is-upgraded>クラスと出席番号の選択</h2>
+<aside class="warning"><p>生徒は参加するクラスをクリックする。</p>
+<p class="image-container"><img style="width: 410.04px" src="img/66a525c6d89b033a.png"></p>
+</aside>
+<aside class="warning"><p>確認のメッセージが表示される。</p>
+<p class="image-container"><img style="width: 413.50px" src="img/afbbd0e10b03a100.png"></p>
+</aside>
+<aside class="warning"><p>出席番号を入力する。</p>
+<p class="image-container"><img style="width: 410.46px" src="img/83b8315e34041aba.png"></p>
+<p>※出席番号を誤って入力してしまった場合は、先生の管理画面で訂正してください。</p>
+</aside>
+<aside class="warning"><p>クラスと出席番号を確認する。</p>
+<p class="image-container"><img style="width: 401.50px" src="img/cdcede0788214e04.png"></p>
+</aside>
+<h2 is-upgraded>出席番号を間違えた場合</h2>
+<aside class="special"><p>生徒が出席番号を間違えた（重複した）場合は、以下のようなエラーが表示されます。</p>
+<p class="image-container"><img style="width: 320.62px" src="img/f625d5d23523c43c.png"></p>
+</aside>
+<aside class="special"><p>エラーが表示された生徒か、先に登録を終えた生徒のどちらかが出席番号を間違えています。生徒のメイン画面を表示して、出席番号が正しいか確認しましょう。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/93ff54cdd10001f6.png"></p>
+</aside>
+<aside class="special"><p>出席番号を誤って登録している生徒を選択します。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/f0cab4c4a8dad07c.png"></p>
+</aside>
+<aside class="special"><p>正しい出席番号に訂正してください。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/6baca855f15e193f.png"></p>
+</aside>
+<p>※間違えた生徒の出席番号を修正できれば、正しい出席番号で登録が行えます。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="生徒のログイン③" duration="5">
+        <h2 is-upgraded>ニックネームとアイコンの決定</h2>
+<aside class="warning"><p>ニックネームとアイコンを選択する。</p>
+<p class="image-container"><img style="width: 521.50px" src="img/46362f7133754479.png"></p>
+</aside>
+<aside class="warning"><p>ログインできました。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/3f634477bcfb3e30.png"></p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="転出/転入の方法" duration="3">
+        <h2 is-upgraded>転出する生徒を削除する場合</h2>
+<aside class="warning"><p>転出する生徒の「ゴミ箱」をクリックする</p>
+<p class="image-container"><img style="width: 587.00px" src="img/a6b96fbcec413f35.jpeg"></p>
+</aside>
+<h2 is-upgraded>転入する生徒を追加する場合</h2>
+<p>まず先にGoogle Classroom側で追加の作業を行います。</p>
+<aside class="warning"><p>追加する生徒をGoogle Classroomで招待する。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/d4cf039973a9f499.png"></p>
+</aside>
+<aside class="warning"><p>該当する生徒をGoogle Classroomに登録後、クラスのメニューから「生徒データを再インポートする」をクリックする。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/516418f72a9be369.png"></p>
+</aside>
+<aside class="warning"><p>インポートするクラスを選びます。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/af874d37f9fd016d.png"></p>
+</aside>
+<aside class="warning"><p>転入生がインポートされます。</p>
+<p class="image-container"><img style="width: 587.00px" src="img/4089e784a320e19e.png"></p>
+</aside>
+<p>これで転入生は他の生徒と同様にログインから操作を行えます。</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="クラスの削除" duration="3">
+        <h2 is-upgraded>クラスの削除</h2>
+<aside class="warning"><p>削除したいクラスのゴミ箱マークをクリック</p>
+<p class="image-container"><img style="width: 587.00px" src="img/59d4896d4f951e4a.png"></p>
+</aside>
+<p>※クラスを削除すると生徒の学習データは利用できなくなりますので、ご注意ください。</p>
+<p>※クラスを削除するとデータ復旧もできませんので、慎重に作業をお願いします。</p>
+<p>※年度をまたいでも自動でクラスの消去は行いませんが、不正利用を防ぐために年度末3/31を過ぎると生徒アカウントにはロックがかかります。学年をまたいで指導に当たられる場合はご注意ください。</p>
+<aside class="special"><p>年度末に不要になったクラスは削除するようにしてください。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="生徒がGoogleアカウントのパスワードを忘れたり紛失した場合" duration="0">
+        <aside class="warning"><p>みんなのコードではGoogleのアカウントに関するパスワードの再発行等は行えません。学校のICT担当者または教育委員会のICT担当者へ御相談ください。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="パスワードがロックされた場合" duration="0">
+        <aside class="warning"><p>SSO機能を使って生徒のアカウントを作成した場合は、生徒はパスワードを用いてログインしないため、パスワードを間違えてロックがかかることがありません。</p>
+<p>※ただし、年度末に不正利用を防ぐためにシステムが生徒アカウントにロックをかけます。年度をまたいで指導する場合は、先生の管理画面からロックを外してください。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="先生アカウントの管理" duration="0">
+        <p>登録されている先生の名前などは「アカウント設定」から変更できます。</p>
+<p>みんなのコードからの配信メールを受信しない場合の設定やSSOの解除、アカウントの抹消（先生＆生徒データの全消去）もこちらから行えます。</p>
+<aside class="warning"><p class="image-container"><img style="width: 587.00px" src="img/89ae7ad26de03cf1.png"></p>
+<p>※退会してしまうと生徒の授業に関するデータなどが利用できなくなってしまいます。十分注意してください。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="先生の異動に伴うアカウント管理" duration="0">
+        <p>勤務先の異動などで、先生の利用するGoogleアカウントに変更があった場合は、手続きが必要になります。</p>
+<p>その際、以下のようなパターンが考えられます。</p>
+<aside class="warning"><p class="image-container"><img style="width: 587.00px" src="img/f58ba8b80853c7ff.png"></p>
+</aside>
+<p><strong>1：新しい勤務校でもGoogle Workspaceを利用しており、Googleアカウント並びにClassroomが利用できる。</strong></p>
+<aside class="warning"><p>旧勤務校のGoogleアカウント解除 → メールアドレス＆パスワード運用 → 新勤務校のGoogleアカウント連携 の操作が必要</p>
+</aside>
+<p><strong>2：新しい勤務校ではGoogle Workspaceを利用しておらず、Googleアカウント並びにClassroomが利用できない。</strong></p>
+<aside class="warning"><p>A)旧勤務校のGoogleアカウント → メールアドレス＆パスワードの運用に変更 → 個人作成のGoogleアカウント</p>
+<p>B)旧勤務校のGoogleアカウント → メールアドレス＆パスワードの運用に変更</p>
+</aside>
+<p>新しい勤務校でGoogleアカウントが利用できない場合も、個人で作成したGoogleアカウントとの連携は可能ですが、Google Classroomから生徒をインポートする機能は使えません。（GoogleアカウントによるSSOのみ利用可能です。）</p>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Googleアカウントを使ったSSOからメール・パスワード運用への変更（パスワードの変更）" duration="0">
+        <p>教師用アカウントに紐付けされたGoogleアカウントを外す作業を行います。</p>
+<p>※先生アカウントを作る際に、メールアドレス＆パスワードを用いて先生アカウントを作成し、SSOの手続きを行った方はこの作業は不要ですので、Nextで次のページへ進んでください。</p>
+<p>まず、先生のアカウント設定の画面を表示します。</p>
+<h2 is-upgraded>管理メニュー → アカウント設定</h2>
+<aside class="warning"><p>「パスワードを変更する」をクリックしパスワードを設定する。</p>
+<p class="image-container"><img style="width: 508.30px" src="img/1f1cbd2909250f5e.png"></p>
+</aside>
+<h2 is-upgraded>パスワードの再設定</h2>
+<aside class="warning"><p>パスワードを入力してください。</p>
+<p class="image-container"><img style="width: 443.00px" src="img/841ae9ad3370e11a.png"></p>
+<p>※続いて、メールアドレスの設定を行います。</p>
+</aside>
+
+
+      </google-codelab-step>
+    
+      <google-codelab-step label="Googleアカウントを使ったSSOからメール・パスワード運用への変更（メールアドレスの変更）" duration="0">
+        <p>パスワードの設定が終わったら、「メールアドレスを変更する」をクリックして設定します。</p>
+<aside class="warning"><p>「パスワードを変更する」をクリックしパスワードを設定する。</p>
+<p class="image-container"><img style="width: 508.30px" src="img/91b65d5ae22bc8aa.png"></p>
+</aside>
+<aside class="warning"><p>新しいメールアドレスを入力して「登録」を押す。</p>
+<p class="image-container"><img style="width: 352.50px" src="img/568db53f5cc876b5.png"></p>
+</aside>
+<p>新しいメールアドレス先に登録確認メールが送信されます。</p>
+<aside class="warning"><p class="image-container"><img style="width: 311.59px" src="img/8ee3ad7367e12e02.png"></p>
+</aside>
+<p>確認メールが届いていることを確認して、文中のURLをクリックする。</p>
+<aside class="warning"><p class="image-container"><img style="width: 503.50px" src="img/3038d8d8c0588bdc.png"></p>
+</aside>
+<p>以上で、メールアドレスとパスワードの紐付け作業が完了です。</p>
+<p>この後、一度ログアウトして、<strong>メールアドレスとパスワードにて先生アカウントにログインできることを念のため確認してください。</strong></p>
+<aside class="warning"><p>連携解除のボタンが有効になるので、クリックしてください。</p>
+<p class="image-container"><img style="width: 521.28px" src="img/a844e59913339283.png"></p>
+</aside>
+<p><strong>新しい勤務校でGoogleアカウントが発行されたら、前述の既存アカウントに紐付けの説明を参考に登録を行ってください。</strong></p>
+
+
+      </google-codelab-step>
+    
+  </google-codelab>
+
+  <script src="https://storage.googleapis.com/claat-public/native-shim.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/custom-elements.min.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/prettify.js"></script>
+  <script src="https://storage.googleapis.com/claat-public/codelab-elements.js"></script>
+  <script src="//support.google.com/inapp/api.js"></script>
+
+</body>
+</html>
